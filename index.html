@@ -1,39 +1,94 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <style>
-        :root{
-            --smaller: 0.95;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 10px;
-            background-image: linear-gradient(to right, rgb(189, 0, 116),orange, yellow, rgb(179, 255, 0),rgb(0, 225, 255));
-        }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-        h1 {
-            align-content: center;
-            background-image: linear-gradient(to right, rgb(189, 0, 116),orange, yellow, rgb(179, 255, 0),rgb(0, 225, 255));
-            font-family: 'Franklin Gothic Medium', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Gothic, Geneva, Verdana, sans-serif;
-        }
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
 
-        html, body {
-            height: 100%;
-            width: 100%;
-            align-content: center;
-            background-image: linear-gradient(to right, rgb(189, 0, 116),orange, yellow, rgb(179, 255, 0),rgb(0, 225, 255));
-            font-family: 'Franklin Gothic Medium', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Gothic, Geneva, Verdana, sans-serif;
-            font-size: 50px;
-        }
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
-    </style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why Not?</title>
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-image: linear-gradient(to right, rgb(179, 255, 0),rgb(0, 255, 128));;
+  color: #ffffff;
+  border: solid black 2px;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border: 2px solid black;  
+  font-weight: bold;
+  border-radius: 4px;  
+  cursor: pointer;
+  padding: 8px;
+  margin-bottom: 7px;
+  background-image: linear-gradient(rgb(255, 0, 43),rgb(162, 0, 255));
+  text-transform: uppercase solid black bold;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-image: linear-gradient(rgb(0, 132, 255),purple);
+  color:rgb(179, 255, 0);
+}
+</style>
 </head>
 <body>
-    <h1>sup nerds</h1>
+
+<div class="header">
+  <h1>Chania</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+      <li>The Flight</li>
+      <li>The City</li>
+      <li>The Island</li>
+      <li>The Food</li>
+    </ul>
+  </div>
+
+  <div class="col-9">
+    <h1>The City</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <p>Resize the browser window to see how the content respond to the resizing.</p>
+  </div>
+</div>
+
 </body>
 </html>
