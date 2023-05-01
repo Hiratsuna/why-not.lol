@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<index class="css"></index>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-* {
+
+*{
   box-sizing: border-box;
 }
 
@@ -16,6 +18,7 @@
 [class*="col-"] {
   float: left;
   padding: 15px;
+  background-color: beige;
 }
 
 .col-1 {width: 8.33%;}
@@ -36,50 +39,93 @@ html {
 }
 
 .header {
-  background-image: linear-gradient(to right, rgb(179, 255, 0),rgb(0, 255, 128));;
+  font-size:large;
+  letter-spacing: 0.72px;
+  background-color:rgb(0, 255, 128);
   color: #ffffff;
+  text-align: start;
+  text-shadow: 0 0 4px #FF0000, 0 0 5px #0000FF;
   border: solid black 2px;
-  padding: 15px;
+  padding: 10px;
+  padding-left: 79px;
   border-radius: 6px;
+}
+
+.header:hover {
+  background-image: linear-gradient(to left, rgb(60, 236, 60), rgb(50, 255, 238));
 }
 
 .menu ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 2.5px;
+  padding: 3px;
 }
 
 .menu li {
   border: 2px solid black;  
+  align-items: center;
+  text-align: center;
   font-weight: bold;
   border-radius: 4px;  
   cursor: pointer;
   padding: 8px;
   margin-bottom: 7px;
-  background-image: linear-gradient(rgb(255, 0, 43),rgb(162, 0, 255));
+  background-image: linear-gradient(rgb(255, 146, 164),rgb(162, 0, 255));
   text-transform: uppercase solid black bold;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .menu li:hover {
-  background-image: linear-gradient(rgb(0, 132, 255),purple);
-  color:rgb(179, 255, 0);
+  background-image: linear-gradient(rgb(0, 132, 255),blue);
+  color:rgb(255, 166, 0);
+}
+
+.menu li:active {
+  transform: translateY(2px);
+}
+
+.button {
+  background-color: beige;
+  display:inline;
+  padding: 2px;
+  margin: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(19, 10, 19);
+  background-color: yellow;
+  border-radius: 15px;
+  border: 2px solid black; 
+}
+
+.button:hover {
+  background-color: #c8ff00;
+  color: rgb(155, 29, 50);
+}
+
+.button:active {
+  background-color:rgb(0, 174, 255);
+  transform: translateY(2px);
 }
 </style>
+
+<br>
+
 </head>
 <body>
 
 <div class="header">
-  <h1>Chania</h1>
+  <h1>Why Not?</h1>
 </div>
 
 <div class="row">
   <div class="col-3 menu">
     <ul>
-      <li>The Flight</li>
-      <li>The City</li>
-      <li>The Island</li>
-      <li>The Food</li>
+      <li>Stream</li>
+      <li>Discord</li>
+      <li>Blog</li>
+      <li>Casual Nerding</li>
+      <li>About Me</li>
     </ul>
   </div>
 
@@ -88,7 +134,15 @@ html {
     <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
     <p>Resize the browser window to see how the content respond to the resizing.</p>
   </div>
+
+<div class="button">
+  <div class="col-1 button">
+    <p>
+      Back
+    </p>
+  </div>
 </div>
+
 
 </body>
 </html>
