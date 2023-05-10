@@ -1,4 +1,5 @@
 # why-not.lol
+[Hi](https://why-not.lol)
 
 Supposed to be my webpage or portfolio *OR SOMETHING!*
 
